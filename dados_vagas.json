@@ -1,0 +1,951 @@
+{
+  "atualizado_em": "2026-10-15T16:14:21.895076-03:00",
+  "vagas": [
+    {
+      "id": "V-0D978B24D1",
+      "prioridade": "P1",
+      "empresa_vaga": "BTG Pactual — Estágio Short Job | Automation - Development",
+      "url": "https://carreiras.btgpactual.com/vagas?gh_jid=6133390004",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Auxílio-refeição; Saúde; Odontológico; VT",
+      "local_modelo": "São Paulo / Rio de Janeiro | Remoto / híbrido — a confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Curso, horário, bolsa e presença; no Development confirmar opção remota e nível técnico.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:20:22.828269-03:00",
+      "fontes": [
+        "https://carreiras.btgpactual.com/vagas?gh_jid=6133390004",
+        "https://boards-api.greenhouse.io/v1/boards/btgpactual/jobs?content=true"
+      ]
+    },
+    {
+      "id": "V-4145A59157",
+      "prioridade": "P1",
+      "empresa_vaga": "BTG Pactual — Estágio Short Job | Automation - Discovery",
+      "url": "https://carreiras.btgpactual.com/vagas?gh_jid=6133602004",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Auxílio-refeição; Saúde; Odontológico; VT",
+      "local_modelo": "São Paulo / Rio de Janeiro | Híbrido",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Curso, horário, bolsa e presença; no Development confirmar opção remota e nível técnico.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:20:22.828269-03:00",
+      "fontes": [
+        "https://carreiras.btgpactual.com/vagas?gh_jid=6133602004",
+        "https://boards-api.greenhouse.io/v1/boards/btgpactual/jobs?content=true"
+      ]
+    },
+    {
+      "id": "V-4B5435D5B7",
+      "prioridade": "P1",
+      "empresa_vaga": "BTG Pactual — Estágio Short Job | Automation - Discovery (Fev/2027)",
+      "url": "https://carreiras.btgpactual.com/vagas?gh_jid=6188501004",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Auxílio-refeição; Saúde; Odontológico; VT",
+      "local_modelo": "São Paulo / Rio de Janeiro | Híbrido",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Curso, horário, bolsa e presença; no Development confirmar opção remota e nível técnico.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:20:22.828269-03:00",
+      "fontes": [
+        "https://carreiras.btgpactual.com/vagas?gh_jid=6188501004",
+        "https://boards-api.greenhouse.io/v1/boards/btgpactual/jobs?content=true"
+      ]
+    },
+    {
+      "id": "V-2F9DBDEDD1",
+      "prioridade": "P1",
+      "empresa_vaga": "C6 Bank — Programa de Estágio 2027.1",
+      "url": "https://job-boards.greenhouse.io/c6bank/jobs/4739622005",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR; Saúde; Odontológico; Seguro; Wellhub; Terapia",
+      "local_modelo": "São Paulo - Jardins | Presencial",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Texto exclui dez/2027, formulário inclui; não presumir elegibilidade. Confirmar alocação técnica.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:11:51.439161-03:00",
+      "fontes": [
+        "https://job-boards.greenhouse.io/c6bank/jobs/4739622005"
+      ]
+    },
+    {
+      "id": "V-837FB0AC3B",
+      "prioridade": "P1",
+      "empresa_vaga": "Schneider Electric — Programa de Estágio 01/2027",
+      "url": "https://brpcareers-se.icims.com/jobs/136871/programa-de-est%C3%A1gio-01-2027/job",
+      "bolsa": 1690,
+      "bolsa_max": 1830,
+      "beneficios": "VR ou restaurante; Saúde; Odontológico; Wellhub; Folga aniversário",
+      "local_modelo": "São Paulo / Cajamar | Híbrido ou presencial por área",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Tecnólogo, vagaTI/local e horário;1690penúltimo/1830último, não faixa livre.",
+      "prazo": "2026-11-13",
+      "verificado_em": "2026-10-15T12:25:20.781743-03:00",
+      "fontes": [
+        "https://www.se.com/br/pt/about-us/newsroom/news/press-releases/schneider-electric-abre-inscri%C3%A7%C3%B5es-para-programa-de-est%C3%A1gio-6acfc0a6ba6273b80905c747/",
+        "https://brpcareers-se.icims.com/jobs/136871/programa-de-est%C3%A1gio-01-2027/job"
+      ]
+    },
+    {
+      "id": "V-9091BCA129",
+      "prioridade": "P1",
+      "empresa_vaga": "Stefanini — ESTAGIARIO DE TECNOLOGIA - SOLUÇÕES APLICADAS IA",
+      "url": "https://stefanini.gupy.io/jobs/12411574",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VA ou VR; Assistência médica; Odontológico; Academia Stefanini; Mentoria",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Confirmar tecnólogo, jornada, bolsa e saída para a faculdade.",
+      "prazo": "2026-11-21",
+      "verificado_em": "2026-10-15T16:10:57.124258-03:00",
+      "fontes": [
+        "https://stefanini.gupy.io/jobs/12411574"
+      ]
+    },
+    {
+      "id": "V-607313E7B1",
+      "prioridade": "P1",
+      "empresa_vaga": "Andrade Gutierrez — Estágio em TI",
+      "url": "https://estagioandradegutierrez.gupy.io/jobs/12567947",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Familiaridade com Excel/BI não confirmada; bolsa, horário e tecnólogo.",
+      "prazo": "2026-11-22",
+      "verificado_em": "2026-10-15T16:10:57.876255-03:00",
+      "fontes": [
+        "https://estagioandradegutierrez.gupy.io/jobs/12567947"
+      ]
+    },
+    {
+      "id": "V-3A2C677D8C",
+      "prioridade": "P2",
+      "empresa_vaga": "Ecogen Brasil — Estágio em TI (Help Desk)",
+      "url": "https://ecogenbrasil.gupy.io/jobs/12170231",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR; VT ou mobilidade; Saúde; Odontológico; Seguro; Academia; Universidade corporativa",
+      "local_modelo": "São Paulo - SP | Híbrido / presencial — conflito",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Confirmar modelo real, horário, bolsa e curso.",
+      "prazo": "2026-11-30",
+      "verificado_em": "2026-10-15T16:10:57.791016-03:00",
+      "fontes": [
+        "https://ecogenbrasil.gupy.io/jobs/12170231"
+      ]
+    },
+    {
+      "id": "V-13918E9247",
+      "prioridade": "P2",
+      "empresa_vaga": "Helbor — Programa de Estágio - Suporte de TI",
+      "url": "https://helbor.gupy.io/jobs/12506875",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VA; VR; Saúde; Odontológico; Seguro de vida; Treinamento interno; Wellhub; Zenklub",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Horário, bolsa, aceitação do tecnólogo e prática com Microsoft 365.",
+      "prazo": "2026-11-15",
+      "verificado_em": "2026-10-15T16:10:57.116224-03:00",
+      "fontes": [
+        "https://helbor.gupy.io/jobs/12506875"
+      ]
+    },
+    {
+      "id": "V-7840824D77",
+      "prioridade": "P3",
+      "empresa_vaga": "Grupo SEB — Estágio em Tecnologia da Informação",
+      "url": "https://gruposeb.gupy.io/jobs/12656057",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Alimentação na escola; Auxílio-transporte",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Confirmar atividades, jornada, curso e bolsa.",
+      "prazo": "2026-11-30",
+      "verificado_em": "2026-10-15T16:10:57.908267-03:00",
+      "fontes": [
+        "https://gruposeb.gupy.io/jobs/12656057"
+      ]
+    },
+    {
+      "id": "V-3D21EB52BF",
+      "prioridade": "P1",
+      "empresa_vaga": "Peers Consulting + Technology — CDPeers Group2027.1 — Digital Consulting",
+      "url": "https://peers.inhire.app/cd-peers-group/vagas/5b5198ce-8c1a-4501-a991-a893a0a68f9c/programa-de-estagio-cdpeers-group-20271",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "Brasil | Remoto — Digital Consulting",
+      "jornada": "6h/dia — fonte secundária; confirmar no ATS",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "ATENÇÃO: bacharelado na descrição replicada de Digital. Confirmar aceitação de tecnólogo no ATS; Office interm./avançado.",
+      "prazo": "2026-10-31",
+      "verificado_em": "2026-10-15T16:11:07.449068-03:00",
+      "fontes": [
+        "https://peers.inhire.app/cd-peers-group/vagas/5b5198ce-8c1a-4501-a991-a893a0a68f9c/programa-de-estagio-cdpeers-group-20271",
+        "https://peers.com.br/programa-de-estagio-da-peers-abre-mais-de-20-vagas/",
+        "https://www.netvagas.com.br/empresa/anuncios/a2536392/programa-de-estagio-cdpeers-group-2027-1/"
+      ]
+    },
+    {
+      "id": "V-07220ED371",
+      "prioridade": "P2",
+      "empresa_vaga": "Impacta — Estagiário TI",
+      "url": "https://impacta.gupy.io/jobs/12671097",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Confirmar bolsa, jornada 4h/6h, tecnólogo e saída para faculdade.",
+      "prazo": "2026-12-16",
+      "verificado_em": "2026-10-15T16:11:17.789131-03:00",
+      "fontes": [
+        "https://impacta.gupy.io/jobs/12671097"
+      ]
+    },
+    {
+      "id": "V-5E772578CC",
+      "prioridade": "P2",
+      "empresa_vaga": "Vieira Rezende Advogados — Estagiário de TI — Help Desk / Suporte",
+      "url": "https://vieirarezendeadv.gupy.io/jobs/12649735",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Confirmar bolsa, jornada 4h/6h, endereço, curso e trajeto.",
+      "prazo": "2026-11-29",
+      "verificado_em": "2026-10-15T16:12:00.619236-03:00",
+      "fontes": [
+        "https://vieirarezendeadv.gupy.io/jobs/12649735"
+      ]
+    },
+    {
+      "id": "V-7271A5B65F",
+      "prioridade": "P2",
+      "empresa_vaga": "B4A — Estágio em Tecnologia - Automação, IA & Desenvolvimento",
+      "url": "https://b4a.gupy.io/jobs/12204537",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR Caju; VT Caju; Wellhub; Seguro; Parcerias educacionais",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Aberta · confirmar requisitos",
+      "pendencias": "Confirmar jornada, bolsa e expectativas de código.",
+      "prazo": "2026-10-19",
+      "verificado_em": "2026-10-15T16:10:57.902926-03:00",
+      "fontes": [
+        "https://b4a.gupy.io/jobs/12204537"
+      ]
+    },
+    {
+      "id": "V-16B4373426",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Itaú — Estágio Corporativo2026 — Banco de talentos",
+      "url": "https://vemproitau.gupy.io/jobs/11511312",
+      "bolsa": 2600,
+      "bolsa_max": null,
+      "beneficios": "VR R$1,173.15; VT; Saúde; Odontológico; Seguro; Wellhub/TotalPass",
+      "local_modelo": "São Paulo - SP | Híbrido ou presencial por área",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Banco de talentos",
+      "pendencias": "Alocação, tecnólogo e periodicidade doVR não explicitados.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:35:30.141200-03:00",
+      "fontes": [
+        "https://vemproitau.gupy.io/jobs/11511312"
+      ]
+    },
+    {
+      "id": "V-281735FB91",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "C6 Bank — Estágio em Monitoração Financeira — Python",
+      "url": "https://job-boards.greenhouse.io/c6bank/jobs/4733675005",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR; Saúde; Odontológico; Seguro; Wellhub/TotalPass; Carbon Academy; Van corporativa",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Link passou a abrir o quadro geral; requisição ausente da API atual. Verificação inconclusiva; não recomendar como aberta.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:11:51.782445-03:00",
+      "fontes": [
+        "https://job-boards.greenhouse.io/c6bank/jobs/4733675005"
+      ]
+    },
+    {
+      "id": "V-AF038BF825",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Bradesco — Programa2026 — Tecnologia e Dados",
+      "url": "https://app.eureca.me/vagas/019f04c4-0b85-7fc6-9ff3-e3913efb6dee",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Transporte; Saúde; TotalPass; Unibrad",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "20,25ou30h/semana",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Abertura da trilha, data de início e mínimo1ano antes dez/2027.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:27:12.101681-03:00",
+      "fontes": [
+        "https://estagiobradesco2026.eureca.me/",
+        "https://app.eureca.me/vagas/019f04c4-0b85-7fc6-9ff3-e3913efb6dee"
+      ]
+    },
+    {
+      "id": "V-D772D210C8",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Tribanco — Estagiário (Vaga exclusiva para pessoas negras) - Risco Cibernético - São Paulo/SP",
+      "url": "https://tribanco.gupy.io/jobs/11236619",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "Cyber",
+      "situacao": "Banco de talentos",
+      "pendencias": "Pertencimento ao grupo não informado; banco não equivale a vaga aberta.",
+      "prazo": "2026-10-19",
+      "verificado_em": "2026-10-15T12:21:49.534011-03:00",
+      "fontes": [
+        "https://tribanco.gupy.io/jobs/11236619"
+      ]
+    },
+    {
+      "id": "V-F10014C830",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Santander — Programa de Estágio2026",
+      "url": "https://www.universia.net/br/emprego/6dde4e20-a05f-406e-9704-378d05cf5067/programa-de-estagio-santander-2026.html",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR; VT; Saúde; Seguro; Gympass; Academia Santander",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "4h ou6h/dia",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "LinkUniversia dinâmico; confirmar abertura e áreaTI.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:35:30.141200-03:00",
+      "fontes": [
+        "https://www.santander.com.br/hotsite/carreiras/programa-de-estagio.html",
+        "https://www.universia.net/br/emprego/6dde4e20-a05f-406e-9704-378d05cf5067/programa-de-estagio-santander-2026.html"
+      ]
+    },
+    {
+      "id": "V-5C26ABA3D2",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "T-Systems — Estágio em Segurança da Informação",
+      "url": "https://br.linkedin.com/jobs/view/4466897210",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "Brasil | Remoto",
+      "jornada": "6h/dia a confirmar intervalo",
+      "curriculo": "Cyber",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Confirmar abertura na fonte da empresa; não usar estimativa salarial de agregador.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:35:30.141200-03:00",
+      "fontes": [
+        "https://br.linkedin.com/jobs/view/4466897210"
+      ]
+    },
+    {
+      "id": "V-8C136875AE",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Henry Schein — Estagiário | Segurança da Informação",
+      "url": "https://br.linkedin.com/jobs/view/4473437314",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR ouVA; Auxílio home office; Odontológico; Seguro; Wellhub; Zenklub; Cursos; Folga aniversário",
+      "local_modelo": "Brasil | Remoto",
+      "jornada": "6h/dia",
+      "curriculo": "Cyber",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "AnúncioLinkedIn disponível, mas ausente na lista atual do portal Gupy; confirmar abertura e presença eventual.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:25:20.975986-03:00",
+      "fontes": [
+        "https://br.linkedin.com/jobs/view/4473437314",
+        "https://henryschein.gupy.io/"
+      ]
+    },
+    {
+      "id": "V-760395FAC4",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Vivo Vita — Programa de Estágio - Cyber Security",
+      "url": "https://vivovita.gupy.io/jobs/12480308",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR; VT; Saúde; Odontológico; Seguro; Mentoria",
+      "local_modelo": "São Paulo - SP | Híbrido",
+      "jornada": "A confirmar",
+      "curriculo": "Cyber",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Prazo atual 15/10/2026; aviso anterior conflitante. Revalidar inscrição hoje antes de preparar candidatura.",
+      "prazo": "2026-10-15",
+      "verificado_em": "2026-10-15T16:10:57.110435-03:00",
+      "fontes": [
+        "https://vivovita.gupy.io/jobs/12480308"
+      ]
+    },
+    {
+      "id": "V-3AA06F73F3",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Danone — Estágio2027 — áreasSP a confirmar",
+      "url": "https://www.ciadeestagios.com.br/vagas/danone/",
+      "bolsa": 1900,
+      "bolsa_max": 2100,
+      "beneficios": "VR R$830.00; Saúde; Odontológico; Seguro; TotalPass; 13ª bolsa",
+      "local_modelo": "São Paulo - SP | Híbrido",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Não há trilhaTI explícita;1900primeiroano/2100segundoano conforme programa.",
+      "prazo": "2026-10-15",
+      "verificado_em": "2026-10-15T12:24:16.935568-03:00",
+      "fontes": [
+        "https://www.ciadeestagios.com.br/vagas/danone/"
+      ]
+    },
+    {
+      "id": "V-7C0FC6BA15",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Núclea — 🚀 Vem ser Núclea | Summer Job e Programa de Estágio",
+      "url": "https://nuclea.gupy.io/jobs/11543418",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | Híbrido",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Banco de talentos",
+      "pendencias": "Não é oferta técnica específica; confirmar programa e critérios.",
+      "prazo": "2027-01-01",
+      "verificado_em": "2026-10-15T12:21:49.469608-03:00",
+      "fontes": [
+        "https://nuclea.gupy.io/jobs/11543418"
+      ]
+    },
+    {
+      "id": "V-01D819A4F9",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Ultragaz — Programa de Estágio2027 — Tecnologia/IA",
+      "url": "https://www.ciadeestagios.com.br/vagas/ultragaz/",
+      "bolsa": 3000,
+      "bolsa_max": null,
+      "beneficios": "VR R$1,124.64; Saúde; Odontológico; Seguro; VT; Wellhub; Cesta Natal",
+      "local_modelo": "São Paulo / Mauá | A confirmar",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Fonte externa cita11/10; landing sem prazo mantém link. Confirmar prorrogação, tecnólogo e alocação.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:10:57.175549-03:00",
+      "fontes": [
+        "https://www.ciadeestagios.com.br/vagas/ultragaz/",
+        "https://www.horabrasil.com.br/2026/10/08/ultragaz-programa-de-estagio-2027/"
+      ]
+    },
+    {
+      "id": "V-B18FC0F964",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "T-Systems — Estágio em Redes — SBC",
+      "url": "https://br.linkedin.com/jobs/view/4472331271",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Bernardo do Campo - SP | Presencial",
+      "jornada": "6h/dia a confirmar intervalo",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Abertura do fluxo,tecnólogo,endereço,bolsa e trajeto atéCampus.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:25:21.324362-03:00",
+      "fontes": [
+        "https://br.linkedin.com/jobs/view/4472331271"
+      ]
+    },
+    {
+      "id": "V-0D88AC6840",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Mereo — Pessoa Estagiária de Tecnologia — 4h/dia",
+      "url": "https://br.linkedin.com/jobs/view/4472591929",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "Brasil | Remoto — confirmar no ATS",
+      "jornada": "4h/dia",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "URLespecíficaATS,abertura,bolsa,M365/Intune e eventuais presenças.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:35:30.141200-03:00",
+      "fontes": [
+        "https://br.linkedin.com/jobs/view/4472591929",
+        "https://www.curriculum.com.br/vagas/vaga/1264873/de-Pessoa-Estagiaria-de-Tecnologia-4h-dia",
+        "https://mereo.inhire.app/vagas"
+      ]
+    },
+    {
+      "id": "V-5F20F0F3B0",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "V360 — Estágio Full Stack — Segurança",
+      "url": "https://v360.inhire.app/vagas/9865a22d-9a7d-4d11-b5f5-cfd5d90a1201/estagio-desenvolvedor-full-stack-seguranca",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "Brasil | Remoto — confirmar no ATS",
+      "jornada": "6h/dia",
+      "curriculo": "Cyber",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Abertura,expectativaFullStack,presença eventual e pacote; valores só em fontes externas.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:09:29.568234-03:00",
+      "fontes": [
+        "https://v360.inhire.app/vagas/9865a22d-9a7d-4d11-b5f5-cfd5d90a1201/estagio-desenvolvedor-full-stack-seguranca",
+        "https://nomadesdigitais.com/vaga/147925-estagio-desenvolvedor-full-stack-seguranca"
+      ]
+    },
+    {
+      "id": "V-0439E23860",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Banco ABC Brasil — Estágio2027",
+      "url": "https://www.ciadeestagios.com.br/vagas/bancoabcbrasil/",
+      "bolsa": 2913.79,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: Jun–dez/2028",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:24:16.831470-03:00",
+      "fontes": [
+        "https://www.ciadeestagios.com.br/vagas/bancoabcbrasil/"
+      ]
+    },
+    {
+      "id": "V-12D3A556A0",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "XP Inc. — XTAG2027.1",
+      "url": "https://job-boards.greenhouse.io/candidaturasdirecionadasxpinc/jobs/8805413002",
+      "bolsa": 2500,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Bacharelado exigido; redirecionamento no web diverge de formulário/API; prazo13/10.",
+      "prazo": "2026-10-13",
+      "verificado_em": "2026-10-15T12:23:14.674277-03:00",
+      "fontes": [
+        "https://lp.xpi.com.br/programa_de_estagio",
+        "https://job-boards.greenhouse.io/candidaturasdirecionadasxpinc/jobs/8805413002"
+      ]
+    },
+    {
+      "id": "V-D441F8F082",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Safra — Estágio Tecnologia",
+      "url": "https://venhasersafra.gupy.io/jobs/6177121",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Novas inscrições encerradas.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:20:22.278677-03:00",
+      "fontes": [
+        "https://venhasersafra.gupy.io/jobs/6177121"
+      ]
+    },
+    {
+      "id": "V-60A57D67B9",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Serasa Experian — Programa de Estágio2027",
+      "url": "https://www.serasaexperian.com.br/carreiras/blog-carreiras/estagiario-ti-sem-experiencia-serasa-experia/",
+      "bolsa": 2150,
+      "bolsa_max": null,
+      "beneficios": "VR; saúde; odontológico; seguro; Wellhub/TotalPass; idiomas",
+      "local_modelo": "Brasil / São Paulo | Remoto / híbrido conforme vaga",
+      "jornada": "6h contínuas",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura exigida a partir de jul/2028; dez/2027 não atende.",
+      "prazo": "2026-11-04",
+      "verificado_em": "2026-10-15T16:10:28.401215-03:00",
+      "fontes": [
+        "https://www.serasaexperian.com.br/carreiras/blog-carreiras/estagiario-ti-sem-experiencia-serasa-experia/"
+      ]
+    },
+    {
+      "id": "V-65FF639FE6",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "FGC — Estágio em Tecnologia - Suporte",
+      "url": "https://vagasfgc.gupy.io/jobs/12641952",
+      "bolsa": 2500,
+      "bolsa_max": null,
+      "beneficios": "VR R$990.52; VT integral; Seguro; TotalPass",
+      "local_modelo": "São Paulo - SP | Híbrido",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Prazo vencido e aviso de candidaturas encerradas.",
+      "prazo": "2026-10-09",
+      "verificado_em": "2026-10-15T12:19:10.674580-03:00",
+      "fontes": [
+        "https://vagasfgc.gupy.io/jobs/12641952"
+      ]
+    },
+    {
+      "id": "V-A6A29CFFEC",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Zamp — Estágio2027",
+      "url": "https://www.ciadeestagios.com.br/vagas/zamp/",
+      "bolsa": 3500,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | Híbrido",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Sem extensão comprovada do prazo20/09.",
+      "prazo": "2026-09-20",
+      "verificado_em": "2026-10-15T12:20:21.917570-03:00",
+      "fontes": [
+        "https://www.ciadeestagios.com.br/vagas/zamp/"
+      ]
+    },
+    {
+      "id": "V-C0A7B38920",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Braskem — Programa de Estágio2027",
+      "url": "https://braskem.academiadouniversitario.com.br/",
+      "bolsa": 2200,
+      "bolsa_max": 2800,
+      "beneficios": "VR/refeitório; VT/fretado; saúde; seguro",
+      "local_modelo": "São Paulo / Santo André e outras cidades | Presencial ou presencial com flexibilidade",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura exigida a partir de jun/2028; não recomendar como compatível.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:10:28.903471-03:00",
+      "fontes": [
+        "https://braskem.academiadouniversitario.com.br/"
+      ]
+    },
+    {
+      "id": "V-18210B4C73",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Clariant — Estágio2027",
+      "url": "https://www.ciadeestagios.com.br/vagas/clariant/",
+      "bolsa": 1973,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: Graduação a partir dez/2028",
+      "prazo": "2026-10-18",
+      "verificado_em": "2026-10-15T12:21:48.545045-03:00",
+      "fontes": [
+        "https://www.ciadeestagios.com.br/vagas/clariant/"
+      ]
+    },
+    {
+      "id": "V-5588196681",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Livelo — Estágio2027 afirmativo",
+      "url": "https://www.ciadeestagios.com.br/vagas/livelo/",
+      "bolsa": 2100,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: Jun–dez/2028",
+      "prazo": "2026-10-30",
+      "verificado_em": "2026-10-15T12:20:21.700670-03:00",
+      "fontes": [
+        "https://www.ciadeestagios.com.br/vagas/livelo/"
+      ]
+    },
+    {
+      "id": "V-8821A23378",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "PwC — Estágio2027 — Cyber",
+      "url": "https://www.pwc.com.br/pt/carreira-na-pwc/programa-de-estagio-pwc-2027.html",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: A partir jul/2028",
+      "prazo": "2026-10-26",
+      "verificado_em": "2026-10-15T12:21:48.542312-03:00",
+      "fontes": [
+        "https://www.pwc.com.br/pt/carreira-na-pwc/programa-de-estagio-pwc-2027.html"
+      ]
+    },
+    {
+      "id": "V-A31C30F156",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Pirelli — Estágio2027 — TI/SBC",
+      "url": "https://estagiopirelli.com.br/",
+      "bolsa": 1189.44,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: Mínimo18meses de estágio, além do tempo até dez/2027",
+      "prazo": "2026-11-02",
+      "verificado_em": "2026-10-15T12:24:17.038437-03:00",
+      "fontes": [
+        "https://estagiopirelli.com.br/"
+      ]
+    },
+    {
+      "id": "V-F4E50F7EE8",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "BRK — Estágio2027 — TI",
+      "url": "https://brkambiental.com.br/estagio2027",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: A partir jul/2028",
+      "prazo": "2026-10-20",
+      "verificado_em": "2026-10-15T12:21:51.383119-03:00",
+      "fontes": [
+        "https://brkambiental.com.br/estagio2027"
+      ]
+    },
+    {
+      "id": "V-F7EAB793AD",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Scania — Estágio2027 — TI",
+      "url": "https://estagioscania.com.br/",
+      "bolsa": 1800.54,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Formatura/duração obrigatória: Jun/2028–jun/2031; mínimo18meses",
+      "prazo": "2026-11-02",
+      "verificado_em": "2026-10-15T12:24:16.910589-03:00",
+      "fontes": [
+        "https://estagioscania.com.br/"
+      ]
+    },
+    {
+      "id": "V-5BB7C13D3D",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Atlas Governance — Pessoa Estagiária de Governança de SI",
+      "url": "https://atlas-governance.gupy.io/jobs/12323041",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "Brasil | Remoto",
+      "jornada": "A confirmar",
+      "curriculo": "Cyber",
+      "situacao": "Encerrada",
+      "pendencias": "Candidaturas encerradas no HTML oficial apesar de anúncio replicado recente.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:10:06.782058-03:00",
+      "fontes": [
+        "https://atlas-governance.gupy.io/jobs/12323041"
+      ]
+    },
+    {
+      "id": "V-EFF0BE1184",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Geopixel — Estágio em Suporte e Manutenção de Sistemas",
+      "url": "https://geopixel.gupy.io/jobs/12562834",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "São José dos Campos / remoto a confirmar | Remoto em agregador; confirmar no original",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Aviso de encerramento no HTML oficial; modelo remoto apenas em divulgação secundária.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T16:10:28.481594-03:00",
+      "fontes": [
+        "https://geopixel.gupy.io/jobs/12562834"
+      ]
+    },
+    {
+      "id": "V-7AB8F9A948",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "FIVE Validation — Estágio Suporte & QA — Remote",
+      "url": "https://br.linkedin.com/jobs/view/4479740277",
+      "bolsa": 1900,
+      "bolsa_max": null,
+      "beneficios": "VR/VA R$350.00; VT R$100.00; Seguro",
+      "local_modelo": "Brasil / sedeSorocaba | Remoto",
+      "jornada": "10h–17h; intervalo a confirmar",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Inglês intermediário não atende requisito avançado.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:35:30.141200-03:00",
+      "fontes": [
+        "https://br.linkedin.com/jobs/view/4479740277"
+      ]
+    },
+    {
+      "id": "V-98EB4A274D",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Bravonix / LGPDNOW — Estágio SuporteN1 remoto",
+      "url": "https://vagas.solides.com.br/vaga/907231",
+      "bolsa": 1300,
+      "bolsa_max": null,
+      "beneficios": "Seguro",
+      "local_modelo": "Brasil | Remoto",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "SENAI-SãoCaetano não é faculdade emBrasília; não aceita candidaturas.",
+      "prazo": null,
+      "verificado_em": "2026-10-15T12:27:12.818372-03:00",
+      "fontes": [
+        "https://vagas.solides.com.br/vaga/907231"
+      ]
+    },
+    {
+      "id": "V-3FFEEC4E95",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Confidencial430 — Estágio TI",
+      "url": "https://paginaconfidencial430.gupy.io/jobs/10819920",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "Osasco - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Novas inscrições encerradas.",
+      "prazo": "2027-12-07",
+      "verificado_em": "2026-10-15T12:20:21.699236-03:00",
+      "fontes": [
+        "https://paginaconfidencial430.gupy.io/jobs/10819920"
+      ]
+    },
+    {
+      "id": "V-8F0C496E70",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Ambar Tech — Estágio em Infraestrutura | ITSM",
+      "url": "https://ambartech.gupy.io/jobs/9250653",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não informados",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "A confirmar",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Novas inscrições encerradas.",
+      "prazo": "2025-07-28",
+      "verificado_em": "2026-10-15T12:21:48.804704-03:00",
+      "fontes": [
+        "https://ambartech.gupy.io/jobs/9250653"
+      ]
+    },
+    {
+      "id": "V-9983BAB354",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Fundação Cásper Líbero — Estágio em Tecnologia da Informação",
+      "url": "https://fcl.gupy.io/jobs/12555280",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "VR; VT; Wellhub; Seguro; Folga aniversário",
+      "local_modelo": "São Paulo - SP | Presencial",
+      "jornada": "6h/dia",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "Candidato no 1º ano em out/2026.",
+      "prazo": "2026-10-24",
+      "verificado_em": "2026-10-15T12:19:11.373180-03:00",
+      "fontes": [
+        "https://fcl.gupy.io/jobs/12555280"
+      ]
+    },
+    {
+      "id": "V-B90CF43353",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Sodramar — ESTÁGIO EM TI",
+      "url": "https://sodramar.gupy.io/jobs/12383448",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Saúde; Odontológico; VR; Refeitório; Transporte; Parcerias de cursos",
+      "local_modelo": "Diadema - SP | Presencial",
+      "jornada": "40h/semana",
+      "curriculo": "TI",
+      "situacao": "Incompatível",
+      "pendencias": "40h semanais obrigatórias no anúncio.",
+      "prazo": "2026-10-30",
+      "verificado_em": "2026-10-15T12:19:57.535719-03:00",
+      "fontes": [
+        "https://sodramar.gupy.io/jobs/12383448"
+      ]
+    }
+  ],
+  "criterio_prioridade": "Bancos e empresas grandes primeiro; preferência remoto/híbrido, mantendo presencial; confirmar requisitos."
+}
