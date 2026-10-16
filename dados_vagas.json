@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-15T16:14:21.895076-03:00",
+  "atualizado_em": "2026-10-16T12:00:00-03:00",
   "vagas": [
     {
       "id": "V-0D978B24D1",
@@ -944,6 +944,104 @@
       "verificado_em": "2026-10-15T12:19:57.535719-03:00",
       "fontes": [
         "https://sodramar.gupy.io/jobs/12383448"
+      ]
+    },
+    {
+      "id": "V-43B63A264F",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "XP Inc. — Talent Pool Segurança da Informação (2026)",
+      "url": "https://job-boards.greenhouse.io/candidaturasdirecionadasxpinc/jobs/8603572002",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "São Paulo - SP | A confirmar",
+      "jornada": "A confirmar",
+      "curriculo": "Cyber",
+      "situacao": "Banco de talentos",
+      "pendencias": "Talent pool de Segurança da Informação — cadastro, não vaga aberta com início definido. Confirmar se aceita estagiário, curso exigido, jornada, bolsa e modelo.",
+      "prazo": null,
+      "verificado_em": "2026-10-16T12:00:00-03:00",
+      "fontes": [
+        "https://job-boards.greenhouse.io/candidaturasdirecionadasxpinc/jobs/8603572002"
+      ]
+    },
+    {
+      "id": "V-68060AED79",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Nubank — Programa de Estágio 2027 (Tecnologia / Dados / IA)",
+      "url": "https://international.nubank.com.br/pt-br/companhia/nubank-abre-inscricoes-para-programa-de-estagio-2027-com-foco-em-inteligencia-artificial/",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "Regiões metro de São Paulo / Campinas / Rio de Janeiro / Belo Horizonte | Híbrido (3 dias escritório / 2 remoto)",
+      "jornada": "30h/semana",
+      "curriculo": "TI",
+      "situacao": "Encerrada",
+      "pendencias": "Inscrições de 17 a 30/08/2026 pelo estagio.nubank.com.br; início jan/2027. Exige inglês avançado e prática com ferramentas de IA (ex.: Claude, Cursor, Copilot). Monitorar próximo ciclo.",
+      "prazo": "30/08/2026 (encerrado)",
+      "verificado_em": "2026-10-16T12:00:00-03:00",
+      "fontes": [
+        "https://international.nubank.com.br/pt-br/companhia/nubank-abre-inscricoes-para-programa-de-estagio-2027-com-foco-em-inteligencia-artificial/",
+        "https://estagio.nubank.com.br"
+      ]
+    },
+    {
+      "id": "V-209B309BAA",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "CI&T — Programa de Estágio NextGen AI (Desenvolvimento / IA)",
+      "url": "https://canaltech.com.br/mercado/cit-abre-programa-de-estagio-com-foco-em-ia/",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Não divulgados",
+      "local_modelo": "Brasil | Remoto ou híbrido",
+      "jornada": "4h ou 6h/dia",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Ciclos em 2026 (1º lote com inscrições até 12/01/2026, início mar/2026; ~200 vagas por lote). Remoto/híbrido, 4h ou 6h/dia, formatura 12/2026–07/2027. Confirmar novo ciclo e link oficial no ATS.",
+      "prazo": "12/01/2026 (1º lote encerrado)",
+      "verificado_em": "2026-10-16T12:00:00-03:00",
+      "fontes": [
+        "https://canaltech.com.br/mercado/cit-abre-programa-de-estagio-com-foco-em-ia/",
+        "https://convergenciadigital.com.br/carreira/empresa-brasileira-abre-100-vagas-de-estagio-com-formacao-pratica-em-inteligencia-artificial/"
+      ]
+    },
+    {
+      "id": "V-B38185BDA7",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Tempest Security Intelligence — Estágio em Segurança da Informação",
+      "url": "https://estagiotempest.gupy.io/",
+      "bolsa": null,
+      "bolsa_max": null,
+      "beneficios": "Auxílio home office (para atuação remota)",
+      "local_modelo": "Recife - PE / São Paulo - SP | Híbrido; remoto para demais localidades conforme área",
+      "jornada": "A confirmar",
+      "curriculo": "Cyber",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Programa de estágio em segurança da informação com opção remota e auxílio home office. Ciclo divulgado com inscrições até jan/2025; confirmar abertura atual em estagiotempest.gupy.io.",
+      "prazo": null,
+      "verificado_em": "2026-10-16T12:00:00-03:00",
+      "fontes": [
+        "https://estagiotempest.gupy.io/",
+        "https://www.hardware.com.br/noticias/vagas-estagio-ciberseguranca/"
+      ]
+    },
+    {
+      "id": "V-5CAA83691A",
+      "prioridade": "Monitorar",
+      "empresa_vaga": "Conectas Direitos Humanos — Estágio em TI",
+      "url": "https://conectas.org/wp-content/uploads/2026/03/Edital-Estagio-TI.pdf",
+      "bolsa": 1650,
+      "bolsa_max": null,
+      "beneficios": "VT; VR; Saúde; Odontológico; Wellhub; Auxílio idiomas; Auxílio home office (híbrido)",
+      "local_modelo": "São Paulo - SP | Híbrido (2 dias presenciais/semana)",
+      "jornada": "30h/semana (6h/dia)",
+      "curriculo": "TI",
+      "situacao": "Confirmar abertura / requisitos",
+      "pendencias": "Edital de mar/2026: bolsa R$1.650, híbrido com 2 dias presenciais, 30h/semana. Confirmar se as inscrições seguem abertas.",
+      "prazo": null,
+      "verificado_em": "2026-10-16T12:00:00-03:00",
+      "fontes": [
+        "https://conectas.org/wp-content/uploads/2026/03/Edital-Estagio-TI.pdf"
       ]
     }
   ],

@@ -25,7 +25,7 @@ O link é direto para a oportunidade ou programa. As pendências e prazos ficam 
 
 ## Atualização
 
-Pesquisa em **15/10/2026**:49 registros públicos.14 anúncios abertos com requisitos ou logística a confirmar;35 registros de monitoramento. Nenhuma vaga teve toda a elegibilidade e logística comprovadas. Não são49 vagas abertas.
+Pesquisa em **16/10/2026**:54 registros públicos.14 anúncios abertos com requisitos ou logística a confirmar;40 registros de monitoramento (banco de talentos, abertura/requisitos a confirmar, incompatíveis ou encerradas). Nenhuma vaga teve toda a elegibilidade e logística comprovadas. Não são54 vagas abertas.
 
 Esta publicação é um **modelo público**, sem marcações pessoais de inscrição, notas de acompanhamento, contatos, currículos, e-mails ou histórico privado. A versão pessoal fica no Google Planilhas; alterações nela não são publicadas automaticamente no GitHub. Não reimporte o modelo a cada atualização: preserve o acompanhamento pelo ID oculto.
 
