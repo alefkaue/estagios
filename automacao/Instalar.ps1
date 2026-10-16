@@ -31,7 +31,7 @@ $projeto=Get-Content -Raw -LiteralPath '.clasp.json' | ConvertFrom-Json
 if (-not $projeto.scriptId) { throw 'Projeto sem scriptId; interrompendo.' }
 $projeto | Add-Member -NotePropertyName rootDir -NotePropertyValue '.deploy/src' -Force
 [IO.File]::WriteAllText((Join-Path $PSScriptRoot '.clasp.json'),($projeto|ConvertTo-Json -Depth 10),[Text.UTF8Encoding]::new($false))
-foreach ($fonte in @('Assistente.js','Logica.js','Notificacoes.js')) {
+foreach ($fonte in @('Assistente.js','Logica.js','Notificacoes.js','Bot.js','Telegram.js','Busca.js')) {
   Copy-Item -LiteralPath (Join-Path $PSScriptRoot ('src/'+$fonte)) -Destination (Join-Path $pastaDeploy $fonte)
 }
 $manifesto=Get-Content -Raw -LiteralPath (Join-Path $PSScriptRoot 'src/appsscript.json') | ConvertFrom-Json
@@ -42,5 +42,9 @@ $config='const CONFIG_LOCAL = '+(@{planilhaId=$Planilha;emailDestino=$EmailDesti
 Clasp push
 Write-Host 'Codigo enviado. No editor, execute prepararEConferir e autorize o acesso.'
 Write-Host 'Confira o registro de execucao. Depois use atualizarAgora ou ativarAutomatico.'
-if ($ComAvisos) { Write-Host 'Avisos ainda desativados. Use ativarAvisosEmail ou configure a Meta antes de ativarAvisosWhatsApp.' }
+if ($ComAvisos) {
+  Write-Host 'Avisos ainda desativados. Use ativarAvisosEmail, configure a Meta antes de ativarAvisosWhatsApp,'
+  Write-Host 'ou configure TELEGRAM_TOKEN/TELEGRAM_CHAT_ID nas Propriedades do script e use ativarAvisosTelegram.'
+  Write-Host 'Para consultas pelo celular (comandos do bot): publique como App da Web e execute configurarWebhook.'
+}
 Clasp open-script

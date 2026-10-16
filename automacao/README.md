@@ -72,6 +72,35 @@ Depois de instalar com `-ComAvisos`, configure **somente nas Propriedades do scr
 
 Não colocar token em código público, planilha ou README. Execute **ativarAvisosWhatsApp** depois de configurar. Não é possível habilitar o recebimento sem a conta/configuração da Meta. Ver [referência oficial de templates](https://www.postman.com/meta/whatsapp-business-platform/request/o65u5m5/send-message-template-text).
 
+## Avisos e consultas pelo Telegram — recomendado
+
+O Telegram é o canal mais simples e gratuito para receber no celular e **consultar** as candidaturas sem abrir e-mail/planilha. Funciona pela API oficial do bot; o script roda no Apps Script (não precisa deixar o PC ligado). Responde **somente ao seu chat autorizado** e o webhook exige um segredo na URL.
+
+### Passo a passo (depende da sua autorização)
+
+1. No Telegram, fale com **@BotFather**, use `/newbot`, escolha nome e usuário e copie o **token**.
+2. Fale com **@userinfobot** (ou envie qualquer mensagem ao seu bot e veja o `chat.id`) para obter o seu **ID numérico de chat**.
+3. Instale com `-ComAvisos` (habilita a permissão de requisições HTTPS). Depois, no editor do Apps Script, em **Configurações do projeto → Propriedades do script**, preencha:
+
+| Propriedade | Conteúdo |
+|---|---|
+| TELEGRAM_TOKEN | Token do BotFather (nunca no GitHub, planilha ou chat) |
+| TELEGRAM_CHAT_ID | Seu ID numérico de chat (somente dígitos) |
+
+4. Envie `/start` ao seu bot (necessário para o bot poder lhe escrever).
+5. Execute **ativarAvisosTelegram**. Ele envia uma mensagem de confirmação ao seu Telegram e liga o canal. As próximas execuções aplicadas enviam as novidades para lá.
+6. **Para consultar pelo celular (comandos):** publique o projeto como **App da Web** (Implantar → Nova implantação → App da Web; executar como você; acesso “qualquer pessoa”, pois o Telegram chama sem login — a proteção é o segredo da URL + o seu chat autorizado). Depois execute **configurarWebhook** uma vez. O segredo é gerado e guardado nas Propriedades.
+
+### Comandos do bot
+
+`/inicio` `/ajuda` `/vagas` `/entrevistas` `/testes` `/prazos` `/status` `/resumo` `/empresa <nome>` `/beneficios <nome>`.
+
+Registro manual com confirmação: envie `atualizar <empresa> para <status>`. O bot localiza a vaga, mostra o registro atual e só altera a coluna **Próxima ação** (e acrescenta ao histórico) depois que você tocar em **Confirmar**. Nunca sobrescreve suas colunas A:L nem o histórico anterior.
+
+Desligar: **desativarAvisosTelegram** (para os avisos) e **removerWebhook** (para as consultas). Tudo pode ser revogado nas configurações de segurança da conta Google.
+
+O bot **não** lê mensagens recebidas no seu WhatsApp pessoal nem envia candidaturas/respostas a recrutadores. Ele só lê a sua planilha e o Gmail (somente leitura) e escreve apenas mediante a sua confirmação.
+
 ## O que acontece na execução
 
 - Pesquisa inicial nos últimos14 dias; depois, sobreposição de48 h desde o último sucesso.
@@ -94,7 +123,7 @@ Não colocar token em código público, planilha ou README. Execute **ativarAvis
 
 ## Permissões e dados
 
-O manifest padrão solicita Gmail somente leitura, planilhas e gatilhos. Com `-ComAvisos`, inclui envio via MailApp e requisições HTTPS para a Meta. Sem permissões de Agenda. O código usa somente a planilha configurada, mas o escopo Sheets autoriza tecnicamente acesso às planilhas da conta; revise antes de autorizar.
+O manifest padrão solicita Gmail somente leitura, planilhas e gatilhos. Com `-ComAvisos`, inclui envio via MailApp e requisições HTTPS externas (usadas tanto pela Meta/WhatsApp quanto pela API do Telegram). O webhook do Telegram usa o escopo de App da Web. Sem permissões de Agenda. O código usa somente a planilha configurada, mas o escopo Sheets autoriza tecnicamente acesso às planilhas da conta; revise antes de autorizar.
 
 Arquivos `.clasprc.json`, `.clasp.json`, `.deploy/`, ConfigLocal.js, node_modules, logs, tokens e configurações pessoais ficam fora do Git. `.clasprc.json` pode ser salvo pelo clasp na pasta do usuário; nunca compartilhe essa pasta de credenciais.
 
@@ -107,8 +136,8 @@ npm ci --ignore-scripts
 npm test
 ```
 
-20 testes locais aprovados: classificação, vínculo, prévia, preservação, deduplicação, falha de Gmail, paginação, avisos desligados, validação de WhatsApp, aceitação, timeout, compatibilidade com a inscrição no final e pesquisa restrita por marcador. APIs externas foram simuladas: não há teste real de recebimento nem ativação nas contas.
+40 testes locais aprovados: classificação (incluindo convite vs. entrevista agendada, banco de talentos e possível aprovação), vínculo por código (Gupy/Greenhouse/LinkedIn) e por UUID (InHire), prévia, preservação, deduplicação, histórico acrescido, falha de Gmail, paginação, avisos desligados, validação de WhatsApp/Telegram, aceitação, timeout, inscrição no final, pesquisa por marcador e, no Telegram, autorização por chat/segredo, roteamento de comandos, resumo e registro manual com confirmação. APIs externas (Gmail, MailApp, Meta, Telegram) foram simuladas: **não há teste real de recebimento nem ativação nas contas**.
 
-Pesquisa automática de novas vagas, sincronização com GitHub, eventos na Agenda, leitura do WhatsApp recebido e despertadores do Relógio **não estão implementados**. Os avisos atuais acompanham retornos por Gmail; o fato de um recrutador falar só por WhatsApp não alimenta este monitor. A lista pública de vagas não é atualização automática dos processos pessoais.
+Pesquisa automática de novas vagas, sincronização com GitHub, eventos na Agenda (Google Calendar), camada de IA opcional, leitura do WhatsApp recebido e despertadores do Relógio **não estão implementados** nesta entrega. Os avisos atuais acompanham retornos por Gmail; o fato de um recrutador falar só por WhatsApp não alimenta este monitor (registre manualmente pelo Telegram). A lista pública de vagas não é atualização automática dos processos pessoais.
 
 Detalhes da entrega: [FEITO_E_PROXIMOS_PASSOS.md](FEITO_E_PROXIMOS_PASSOS.md).

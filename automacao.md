@@ -2,7 +2,7 @@
 
 Proposta para implementação futura. Nenhuma automação está ativada.
 
-**Atualização de 16/10/2026:** a primeira implementação está em[automacao/](automacao/README.md), com instalador, monitor de Gmail e avisos opcionais por e-mail/WhatsApp Cloud API. Veja[relatório da entrega](automacao/FEITO_E_PROXIMOS_PASSOS.md). Código implementado não significa instalação/autorização nas contas; pesquisa de vagas e Agenda permanecem etapas futuras.
+**Atualização de 16/10/2026:** a implementação está em [automacao/](automacao/README.md), com instalador, monitor de Gmail, avisos opcionais por e-mail/WhatsApp Cloud API e, agora, **bot do Telegram** para avisos e consultas pelo celular (comandos, resumo e registro manual com confirmação). Veja o [relatório da entrega](automacao/ENTREGA_TELEGRAM.md). Código implementado não significa instalação/autorização nas contas; pesquisa de vagas e Agenda permanecem etapas futuras.
 
 ## Objetivo
 

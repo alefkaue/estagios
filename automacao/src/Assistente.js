@@ -7,13 +7,13 @@ function prepararEConferir() {
   const props=PropertiesService.getScriptProperties();
   if (props.getProperty('PLANILHA_ID')!==CONFIG_LOCAL.planilhaId) {
     props.deleteProperty('ULTIMO_SUCESSO');
-    props.setProperty('AVISAR_EMAIL','false');props.setProperty('AVISAR_WHATSAPP','false');
+    props.setProperty('AVISAR_EMAIL','false');props.setProperty('AVISAR_WHATSAPP','false');props.setProperty('AVISAR_TELEGRAM','false');
   }
   props.setProperty('PLANILHA_ID', CONFIG_LOCAL.planilhaId);
   const marcador=String(CONFIG_LOCAL.marcadorGmail||'').trim();
   if ((props.getProperty('GMAIL_LABEL')||'')!==marcador) props.deleteProperty('ULTIMO_SUCESSO');
   props.setProperty('GMAIL_LABEL',marcador);
-  if (CONFIG_LOCAL.avisosPermitidos!==true) { props.setProperty('AVISAR_EMAIL','false');props.setProperty('AVISAR_WHATSAPP','false'); }
+  if (CONFIG_LOCAL.avisosPermitidos!==true) { props.setProperty('AVISAR_EMAIL','false');props.setProperty('AVISAR_WHATSAPP','false');props.setProperty('AVISAR_TELEGRAM','false'); }
   if (CONFIG_LOCAL.emailDestino) props.setProperty('EMAIL_DESTINO',CONFIG_LOCAL.emailDestino);
   return conferirAgora();
 }
@@ -55,7 +55,14 @@ function extrairTexto_(payload) {
   if (!payload) return '';
   let partes = [];
   if (!payload.filename && payload.body && payload.body.data && /^text\/(plain|html)$/.test(payload.mimeType || '')) {
-    partes.push(Utilities.newBlob(Utilities.base64DecodeWebSafe(payload.body.data)).getDataAsString('UTF-8').replace(/<[^>]*>/g, ' '));
+    try {
+      let bytes;
+      try { bytes = Utilities.base64DecodeWebSafe(payload.body.data); } catch (eb) { bytes = Utilities.base64Decode(payload.body.data); }
+      let txt;
+      try { txt = Utilities.newBlob(bytes).getDataAsString('UTF-8'); }
+      catch (eu) { try { txt = Utilities.newBlob(bytes).getDataAsString('ISO-8859-1'); } catch (el) { txt = Utilities.newBlob(bytes).getDataAsString(); } }
+      partes.push(txt.replace(/<[^>]*>/g, ' '));
+    } catch (e) { /* Parte ilegível é ignorada; uma mensagem não derruba a execução inteira. */ }
   }
   (payload.parts || []).forEach(p => { if (!p.filename) partes.push(extrairTexto_(p)); });
   return partes.join('\n').slice(0,150000);
@@ -95,7 +102,7 @@ function processar_(previa) {
       const assunto=(headers.find(h=>h.name.toLowerCase()==='subject')||{}).value||'';
       const texto=assunto+'\n'+extrairTexto_(m.payload);
       const vaga=relacionarMensagem(texto,vagas);
-      propostas.push({mensagem:mid,recebida:Number(m.internalDate),idVaga:vaga?vaga.id:'',acao:sinalDaMensagem(texto),vaga:vaga});
+      propostas.push({mensagem:mid,recebida:Number(m.internalDate),idVaga:vaga?vaga.id:'',acao:sinalDaMensagem(texto),vaga:vaga,assunto:assunto});
     }
     propostas.sort((a,b)=>a.recebida-b.recebida);
     if (!previa) {
@@ -115,6 +122,7 @@ function processar_(previa) {
           if (!(anterior[1] instanceof Date) || anterior[1].getTime()<=p.recebida) {
             alvo.setValues([[p.acao,new Date(p.recebida)]]);
             alvo.getCell(1,1).setNote('Conferir a mensagem original: https://mail.google.com/mail/u/0/#all/'+p.mensagem);
+            registrarHistorico_(ss,vagaAtual.id,vagaAtual.empresa,p.acao,'Gmail');
           }
         }
         enfileirarAvisos_(p,props,ss);

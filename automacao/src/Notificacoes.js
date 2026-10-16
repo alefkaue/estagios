@@ -17,16 +17,23 @@ function filaAvisos_(ss,criar) {
   if (!f && criar) { f=ss.insertSheet('_Notificacoes');f.appendRow(['Chave','Canal','Estado','Empresa','Ação','ID vaga','Atualizado em']);f.hideSheet(); }
   return f;
 }
+var AVISO_PROP = {email:'AVISAR_EMAIL',whatsapp:'AVISAR_WHATSAPP',telegram:'AVISAR_TELEGRAM'};
 function enfileirarAvisos_(proposta,props,ss) {
   const canais=[];
   if (props.getProperty('AVISAR_EMAIL')==='true') canais.push('email');
   if (props.getProperty('AVISAR_WHATSAPP')==='true') canais.push('whatsapp');
+  if (props.getProperty('AVISAR_TELEGRAM')==='true') canais.push('telegram');
   if (!canais.length)return;
+  // Só avisa em eventos relevantes (entrevista, teste, documentos, avanço, aprovação, recusa, banco)
+  // ou quando a mensagem está vinculada a uma vaga. Mensagens genéricas ficam só no log.
+  const relevante = proposta.vaga || /entrevista|teste|documento|aprova|retorno|banco/i.test(proposta.acao||'');
+  if (!relevante) return;
+  const titulo = proposta.vaga ? proposta.vaga.empresa : (proposta.assunto || 'Atualização de recrutamento');
   const f=filaAvisos_(ss,true);
   const chaves=new Set(f.getLastRow()>1?f.getRange(2,1,f.getLastRow()-1,1).getValues().flat():[]);
   canais.forEach(canal=>{
     const chave=proposta.mensagem+'|'+canal;
-    if (!chaves.has(chave)) f.appendRow([chave,canal,'Pendente',textoSeguroCelula(proposta.vaga?proposta.vaga.empresa:'Vínculo da vaga a revisar'),proposta.acao,proposta.idVaga,new Date()]);
+    if (!chaves.has(chave)) f.appendRow([chave,canal,'Pendente',textoSeguroCelula(titulo),proposta.acao,proposta.idVaga,new Date()]);
   });
 }
 function enviarPendentes_(ss,props) {
@@ -34,7 +41,7 @@ function enviarPendentes_(ss,props) {
   const dados=f.getRange(2,1,f.getLastRow()-1,7).getValues();let enviados=0;
   for(let i=0;i<dados.length && enviados<20;i++) {
     const r=dados[i];if(r[2]!=='Pendente')continue;
-    const canal=r[1];if(props.getProperty(canal==='email'?'AVISAR_EMAIL':'AVISAR_WHATSAPP')!=='true')continue;
+    const canal=r[1];if(!AVISO_PROP[canal] || props.getProperty(AVISO_PROP[canal])!=='true')continue;
     let config;
     // Validação antes de iniciar o envio: falha aqui mantém item pendente.
     if(canal==='email') {
@@ -42,10 +49,12 @@ function enviarPendentes_(ss,props) {
       if(!/^[^\s@,;]+@[^\s@,;]+\.[^\s@,;]+$/.test(config||''))throw new Error('Configure um único EMAIL_DESTINO válido.');
       if(MailApp.getRemainingDailyQuota()<1)throw new Error('Cota diária de e-mail esgotada; avisos continuam pendentes.');
     } else if(canal==='whatsapp') config=validarWhatsApp_(props);
+    else if(canal==='telegram') config=validarTelegram_(props);
     else throw new Error('Canal desconhecido na fila.');
     f.getRange(i+2,3).setValue('Enviando');SpreadsheetApp.flush();
     try {
       if(canal==='email') MailApp.sendEmail({to:config,subject:'[Assistente Estagios] Atualização de candidatura',body:corpoAviso_(r[3],r[4],props.getProperty('PLANILHA_ID')),name:'Assistente de estágios'});
+      else if(canal==='telegram') enviarTelegram_(props,config.chatId,corpoTelegramRico_(ss,r[3],r[4],r[5],props.getProperty('PLANILHA_ID')));
       else {
         const resp=UrlFetchApp.fetch('https://graph.facebook.com/'+config.versao+'/'+config.telefoneId+'/messages',{method:'post',contentType:'application/json',headers:{Authorization:'Bearer '+config.token},payload:JSON.stringify(mensagemWhatsApp_(config,r[3]+': '+r[4])),muteHttpExceptions:true});
         const code=resp.getResponseCode();

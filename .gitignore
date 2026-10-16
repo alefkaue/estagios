@@ -19,6 +19,11 @@
 !automacao/src/appsscript.json
 !automacao/appsscript-avisos.exemplo.json
 !automacao/src/Notificacoes.js
+!automacao/src/Bot.js
+!automacao/src/Telegram.js
+!automacao/src/Busca.js
+!automacao/CORRECAO_INSTALADOR_WINDOWS.md
+!automacao/ENTREGA_TELEGRAM.md
 !automacao/test/
 !automacao/test/*.test.cjs
 !automacao/test/instalador.test.ps1
