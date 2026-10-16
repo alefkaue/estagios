@@ -28,3 +28,10 @@ function textoSeguroCelula(texto) {
   const v = String(texto || '');
   return /^[=+@-]/.test(v) ? "'" + v : v;
 }
+function montarConsultaGmail_(marco, marcador) {
+  const periodo=marco?'after:'+Math.floor((Number(marco)-48*3600000)/1000):'newer_than:14d';
+  const nome=String(marcador||'').trim();
+  if (/[\r\n\x00-\x1f]/.test(nome))throw new Error('Marcador Gmail inválido.');
+  const filtro=nome?'label:"'+nome.replace(/\\/g,'\\\\').replace(/"/g,'\\"')+'"':'{estágio estagio candidatura inscrição inscricao entrevista assessment recrutamento from:gupy.io from:greenhouse.io from:inhire.com.br}';
+  return periodo+' -subject:"[Assistente Estagios]" '+filtro;
+}

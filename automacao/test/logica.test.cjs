@@ -12,3 +12,9 @@ test('URL BTG preserva o código de requisição',()=>assert.equal(ctx.relaciona
 test('negação não vira aprovação ou convite',()=>assert.equal(ctx.sinalDaMensagem('Você não foi selecionado para entrevista.'),'Revisar retorno do processo'));
 test('vários sinais viram revisão, sem inventar etapa',()=>assert.equal(ctx.sinalDaMensagem('Entrevista e teste disponíveis'),'Revisar mensagem de recrutamento'));
 test('conteúdo externo não vira fórmula',()=>assert.equal(ctx.textoSeguroCelula('=IMPORTDATA("url")'),'\'=IMPORTDATA("url")'));
+test('marcador limita consulta sem palavras-chave genéricas',()=>{
+ const q=ctx.montarConsultaGmail_(0,'Vagas');assert.ok(q.includes('label:"Vagas"'));assert.ok(q.includes('newer_than:14d'));assert.ok(!q.includes('from:gupy.io'));
+});
+test('consulta mantém sobreposição e trata marcador como um valor',()=>{
+ const q=ctx.montarConsultaGmail_(1792100000000,'Vagas" OR in:anywhere');assert.ok(q.includes('after:1791927200'));assert.ok(q.includes('label:"Vagas\\" OR in:anywhere"'));assert.throws(()=>ctx.montarConsultaGmail_(0,'Vagas\nOR in:anywhere'));
+});

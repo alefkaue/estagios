@@ -1,5 +1,11 @@
 # Entrega da automação — 16/10/2026
 
+## Atualização: marcador de vagas e caminho para WhatsApp
+
+Novas instalações agora usam o marcadorGmail **Vagas** por padrão, configurável no instalador. O monitor rejeita marcador inexistente, preserva a sobreposição e reinicia o marco ao trocar de marcador. Nenhum rótulo/filtro foi criado na conta do usuário: essa organização deve ser configurada antes da primeira leitura.
+
+20testesNode e testeisolado do instalador aprovados. OREADME explica como começar a integraçãoMeta, a diferença entreGmailcomo origem eWhatsAppcomo destino, e a exigência de template compatível. Recebimento peloWhatsApp ainda não foi validado numa conta real; aguarda configuração/autorização do usuário. Os relatos e dados pessoais continuam fora doGitHub.
+
 ## Implementado
 
 - Scripts do Google Apps Script para leitura restrita do Gmail, vínculo por requisição e próximas ações na mesma planilha.

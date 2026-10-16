@@ -34,3 +34,6 @@ test('paginação truncada não avança marco de sucesso',()=>{
 test('checkbox no final é preservado; vínculo depende de cabeçalho',()=>{
  const a=ambiente({novoLayout:true});a.ctx.atualizarAgora();assert.equal(a.grid[1][9],true);assert.equal(a.grid[1][10],'ID-1');assert.equal(a.grid[1][12],'Conferir convite de entrevista');
 });
+test('marcador inexistente interrompe antes de alterar planilha ou marco',()=>{
+ const a=ambiente();a.props.set('GMAIL_LABEL','Vagas');a.ctx.Gmail.Users.Labels={list:()=>({labels:[]})};assert.throws(()=>a.ctx.atualizarAgora(),/Marcador Gmail não encontrado/);assert.equal(a.alteracoes,0);assert.equal(a.props.has('ULTIMO_SUCESSO'),false);
+});

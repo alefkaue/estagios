@@ -10,6 +10,9 @@ function prepararEConferir() {
     props.setProperty('AVISAR_EMAIL','false');props.setProperty('AVISAR_WHATSAPP','false');
   }
   props.setProperty('PLANILHA_ID', CONFIG_LOCAL.planilhaId);
+  const marcador=String(CONFIG_LOCAL.marcadorGmail||'').trim();
+  if ((props.getProperty('GMAIL_LABEL')||'')!==marcador) props.deleteProperty('ULTIMO_SUCESSO');
+  props.setProperty('GMAIL_LABEL',marcador);
   if (CONFIG_LOCAL.avisosPermitidos!==true) { props.setProperty('AVISAR_EMAIL','false');props.setProperty('AVISAR_WHATSAPP','false'); }
   if (CONFIG_LOCAL.emailDestino) props.setProperty('EMAIL_DESTINO',CONFIG_LOCAL.emailDestino);
   return conferirAgora();
@@ -70,8 +73,12 @@ function processar_(previa) {
     let log = ss.getSheetByName(ABA_LOG);
     const vistos = new Set(log && log.getLastRow()>1 ? log.getRange(2,1,log.getLastRow()-1,1).getValues().flat().map(String) : []);
     const marco = Number(props.getProperty('ULTIMO_SUCESSO') || 0);
-    const depois = marco ? 'after:'+Math.floor((marco-48*3600000)/1000) : 'newer_than:14d';
-    const q = depois+' -subject:"[Assistente Estagios]" {estágio estagio candidatura inscrição inscricao entrevista assessment recrutamento from:gupy.io from:greenhouse.io from:inhire.com.br}';
+    const marcador=props.getProperty('GMAIL_LABEL')||'';
+    if (marcador) {
+      const labels=Gmail.Users.Labels.list('me').labels||[];
+      if (!labels.some(l=>l.name===marcador)) throw new Error('Marcador Gmail não encontrado. Crie/aplique o marcador configurado antes de executar.');
+    }
+    const q = montarConsultaGmail_(marco,marcador);
     let page, ids=[], truncado=false, paginas=0;
     do {
       const resp = Gmail.Users.Messages.list('me',{q:q,maxResults:100,...(page?{pageToken:page}:{})});

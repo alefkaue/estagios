@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)][string]$Planilha,[string]$EmailDestino,[switch]$ComAvisos)
+param([Parameter(Mandatory=$true)][string]$Planilha,[string]$EmailDestino,[switch]$ComAvisos,[string]$MarcadorGmail='Vagas')
 $ErrorActionPreference='Stop'
 Set-Location -LiteralPath $PSScriptRoot
 if ($Planilha -match '/spreadsheets/d/([a-zA-Z0-9_-]+)') { $Planilha=$Matches[1] }
@@ -32,7 +32,7 @@ foreach ($fonte in @('Assistente.js','Logica.js','Notificacoes.js')) {
 $manifesto=Get-Content -Raw -LiteralPath (Join-Path $PSScriptRoot 'src/appsscript.json') | ConvertFrom-Json
 if ($ComAvisos) { $manifesto.oauthScopes+=@('https://www.googleapis.com/auth/script.send_mail','https://www.googleapis.com/auth/script.external_request') }
 [IO.File]::WriteAllText((Join-Path $pastaDeploy 'appsscript.json'),($manifesto|ConvertTo-Json -Depth 10),[Text.UTF8Encoding]::new($false))
-$config='const CONFIG_LOCAL = '+(@{planilhaId=$Planilha;emailDestino=$EmailDestino;avisosPermitidos=[bool]$ComAvisos}|ConvertTo-Json -Compress)+';'
+$config='const CONFIG_LOCAL = '+(@{planilhaId=$Planilha;emailDestino=$EmailDestino;avisosPermitidos=[bool]$ComAvisos;marcadorGmail=$MarcadorGmail}|ConvertTo-Json -Compress)+';'
 [IO.File]::WriteAllText((Join-Path $pastaDeploy 'ConfigLocal.js'),$config,[Text.UTF8Encoding]::new($false))
 Clasp push
 Write-Host 'Codigo enviado. No editor, execute prepararEConferir e autorize o acesso.'

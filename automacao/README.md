@@ -30,11 +30,32 @@ O instalador usa `npm ci`, executa os testes, autentica o `clasp`, cria um proje
 
 ## Avisos por e-mail
 
+### Separar somente os e-mails de vagas
+
+Novas instalações procuram por padrão somente o marcador **Vagas**. Não é necessário criar outra conta ou mover/apagar os outros e-mails. Crie esse marcador no Gmail e um filtro que aplique o marcador às mensagens dos seus portais/recrutadores. Comece por remetentes conhecidos; por exemplo, a pesquisa `{from:gupy.io from:greenhouse.io from:inhire.com.br}` pode ser a base de um filtro. Acrescente os remetentes reais das empresas em que se candidatou e revise os resultados antes de aplicar o filtro. Isso não cobre todos os recrutadores automaticamente.
+
+Marque também os retornos recentes já recebidos. A primeira leitura cobre os últimos14dias. Não é necessário selecionar IgnorarCaixadeEntrada: você pode manter as mensagens na caixa e também no marcador. Se aparecer uma resposta fora do filtro, aplique Vagas e confira na próxima execução. Mensagens antigas além da janela exigem reprocessamento específico.
+
+Para um marcador com outro nome, use `-MarcadorGmail 'Meu marcador'` no instalador. Marcador inexistente interrompe a execução, sem alterar a planilha ou avançar o marco. Trocar o marcador na configuração e executar prepararEConferir reinicia a janela inicial. Instalações antigas sem marcador continuam com a pesquisa anterior até serem atualizadas; se desejar explicitamente pesquisa ampla, passe `-MarcadorGmail ''`.
+
+O marcador limita a consulta feita pelo código, mas a autorização Gmailreadonly não oferece isolamento de permissão por marcador. O código não cria rótulos/filtros, não altera mensagens e não arquiva nem marca como lido. [Como organizar com filtros no Gmail](https://support.google.com/a/users/answer/9260550).
+
 Instale com `-ComAvisos` e informe **seu próprio e-mail** como destinatário. Depois de `prepararEConferir`, execute **ativarAvisosEmail**. As próximas execuções aplicadas poderão enviar notificações a esse endereço. A função de ativação não envia uma mensagem de teste.
 
 O Gmail é somente leitura. O envio de notificações é feito separadamente por MailApp; não responde a recrutadores nem encaminha a mensagem completa. Não há lista de distribuição ou envio automático aos amigos: cada instalação tem seu próprio destinatário.
 
 ## Avisos por WhatsApp — opcional
+
+Você pode receber os avisos **somente no WhatsApp**, deixando desativado o envio por e-mail. O Gmail continua como origem dos retornos de candidatura. Fluxo: **Gmail/marcadorVagas → análise → planilha → avisoWhatsApp**. A rotina não lê mensagens recebidas no WhatsApp pessoal.
+
+Para começar do zero:
+
+1. Acesse [Meta for Developers](https://developers.facebook.com/apps/) com sua própria conta e configure um app com o produtoWhatsApp/WhatsAppBusinessPlatform.
+2. Na configuração daAPI, obtenha número remetente/PhoneNumberID e token; adicione/confirme seu número como destinatário permitido no ambiente de teste. Use o teste de mensagem oferecido pela própriaMeta para validar o canal inicialmente.
+3. Para usar este script, configure um template aprovado com **um parâmetro de texto no corpo**. O template de testehello_world, quando não tiver parâmetros, não é diretamente compatível com o formato atual do adaptador. Verifique idioma, versãoAPI suportada, token e condições de produção/cobrança na sua contaMeta.
+4. Instale com `-ComAvisos`, preencha as propriedades privadas abaixo e execute ativarAvisosWhatsApp. Só depois ative a rotina; confira o resultado na fila privada e no celular. Não envie tokens no chat nem noGitHub.
+
+Referência da própriaMeta: [início daCloudAPI](https://www.postman.com/meta/whatsapp-business-platform/collection/wlk6lh4/whatsapp-cloud-api).
 
 É necessário ter a **WhatsApp Business Platform / Cloud API oficial da Meta**, número remetente configurado, token válido, destinatário autorizado e template aprovado com **um parâmetro de texto no corpo**. Pode haver custos e limitações da Meta. Este código não transforma uma conta pessoal comum em API e não automatiza WhatsApp Web.
 
@@ -86,7 +107,7 @@ npm ci --ignore-scripts
 npm test
 ```
 
-17 testes locais aprovados: classificação, vínculo, prévia, preservação, deduplicação, falha de Gmail, paginação, avisos desligados, validação de WhatsApp, aceitação, timeout e compatibilidade com a inscrição no final. APIs externas foram simuladas: não há teste real de recebimento nem ativação nas contas.
+20 testes locais aprovados: classificação, vínculo, prévia, preservação, deduplicação, falha de Gmail, paginação, avisos desligados, validação de WhatsApp, aceitação, timeout, compatibilidade com a inscrição no final e pesquisa restrita por marcador. APIs externas foram simuladas: não há teste real de recebimento nem ativação nas contas.
 
 Pesquisa automática de novas vagas, sincronização com GitHub, eventos na Agenda, leitura do WhatsApp recebido e despertadores do Relógio **não estão implementados**. Os avisos atuais acompanham retornos por Gmail; o fato de um recrutador falar só por WhatsApp não alimenta este monitor. A lista pública de vagas não é atualização automática dos processos pessoais.
 
