@@ -1,0 +1,11 @@
+{
+  "name": "assistente-estagios",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "clasp": "clasp"
+  },
+  "devDependencies": {
+    "@google/clasp": "3.4.1"
+  }
+}

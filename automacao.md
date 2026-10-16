@@ -2,6 +2,8 @@
 
 Proposta para implementação futura. Nenhuma automação está ativada.
 
+**Atualização de 16/10/2026:** a primeira implementação está em[automacao/](automacao/README.md), com instalador, monitor de Gmail e avisos opcionais por e-mail/WhatsApp Cloud API. Veja[relatório da entrega](automacao/FEITO_E_PROXIMOS_PASSOS.md). Código implementado não significa instalação/autorização nas contas; pesquisa de vagas e Agenda permanecem etapas futuras.
+
 ## Objetivo
 
 Acompanhar candidaturas, identificar pendências e entrevistas,
