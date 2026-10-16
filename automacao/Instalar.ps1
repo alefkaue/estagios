@@ -9,10 +9,12 @@ if (-not $PSBoundParameters.ContainsKey('ComAvisos')) {
 }
 if ($ComAvisos -and -not $EmailDestino) { $EmailDestino=Read-Host 'Seu e-mail para receber avisos (Enter para deixar desativado)' }
 if ($EmailDestino -and $EmailDestino -notmatch '^[^\s@,;]+@[^\s@,;]+\.[^\s@,;]+$') { throw 'Informe somente um endereco de e-mail valido.' }
-function Clasp { & npx --no-install clasp @args; if ($LASTEXITCODE -ne 0) { throw 'O clasp falhou. Confira a autorizacao do Google e a API Apps Script.' } }
-& npm ci --ignore-scripts --fetch-retries=1 --fetch-timeout=30000
+# Os wrappers .ps1 de algumas versoes do npm reinterpretam @args.
+# Use os executaveis .cmd para preservar os argumentos no Windows PowerShell.
+function Clasp { & npx.cmd --no-install clasp @args; if ($LASTEXITCODE -ne 0) { throw 'O clasp falhou. Confira a autorizacao do Google e a API Apps Script.' } }
+& npm.cmd ci --ignore-scripts --fetch-retries=1 --fetch-timeout=30000
 if ($LASTEXITCODE -ne 0) { throw 'Falha ao instalar dependencias.' }
-& npm test
+& npm.cmd test
 if ($LASTEXITCODE -ne 0) { throw 'Testes falharam.' }
 # Autorizacao exclusivamente no navegador oficial. Sem senha no terminal.
 Clasp login
@@ -21,6 +23,9 @@ New-Item -ItemType Directory -Force -Path $pastaDeploy | Out-Null
 if (-not (Test-Path -LiteralPath '.clasp.json')) {
   # Cria/puxa arquivos somente na pasta privada; fontes publicas ficam intactas.
   Clasp create --type standalone --title 'Assistente privado de estagios' --rootDir '.deploy/src'
+}
+if (-not (Test-Path -LiteralPath '.clasp.json' -PathType Leaf)) {
+  throw 'O clasp nao criou .clasp.json. Confira a mensagem da etapa de criacao acima; habilite a API Apps Script em https://script.google.com/home/usersettings e tente novamente.'
 }
 $projeto=Get-Content -Raw -LiteralPath '.clasp.json' | ConvertFrom-Json
 if (-not $projeto.scriptId) { throw 'Projeto sem scriptId; interrompendo.' }
