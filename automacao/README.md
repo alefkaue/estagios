@@ -6,7 +6,7 @@ Script instalável para cada pessoa acompanhar **os próprios e-mails e a própr
 
 1. Instale o [Node.js LTS](https://nodejs.org/) se ainda não tiver. Testado com Node 24 e PowerShell 5.1.
 2. Baixe este repositório ou faça `git clone https://github.com/alefkaue/estagios.git`.
-3. Use uma cópia **privada** de `Estagios.xlsx`, convertida para Google Planilhas. Mantenha a aba `Estágios`, coluna A `Inscrito?`, coluna K `ID` e os IDs preenchidos. Cada amigo usa sua própria cópia/conta; não compartilhar uma pasta já configurada com outra pessoa.
+3. Use uma cópia **privada** de `Estagios.xlsx`, convertida para Google Planilhas. Mantenha a aba `Estágios` e cabeçalhos únicos `Inscrito?`, `ID`, `Link` e `Empresa / vaga`, com os IDs preenchidos. O script reconhece esses campos pelo nome, inclusive com a caixa de inscrição no final. Cada amigo usa sua própria cópia/conta; não compartilhar uma pasta já configurada com outra pessoa.
 4. Na pasta `automacao`, execute **Instalar.cmd**. Ele solicita a URL da sua planilha e pergunta se deseja preparar os avisos. Não pede senha no terminal.
 5. Faça login na página oficial do Google quando ela abrir. Pode ser necessário habilitar a [API Apps Script](https://script.google.com/home/usersettings). Essa autorização pertence à sua conta e não pode ser substituída pelo acesso do assistente na conversa.
 6. No editor aberto ao final, execute **prepararEConferir** e autorize as permissões. Confira o registro de execução: é uma prévia, sem alterar sua planilha, enviar avisos ou criar gatilhos.
@@ -86,7 +86,7 @@ npm ci --ignore-scripts
 npm test
 ```
 
-16 testes locais aprovados: classificação, vínculo, prévia, preservação, deduplicação, falha de Gmail, paginação, avisos desligados, validação de WhatsApp, aceitação e timeout. APIs externas foram simuladas: não há teste real de recebimento nem ativação nas contas.
+17 testes locais aprovados: classificação, vínculo, prévia, preservação, deduplicação, falha de Gmail, paginação, avisos desligados, validação de WhatsApp, aceitação, timeout e compatibilidade com a inscrição no final. APIs externas foram simuladas: não há teste real de recebimento nem ativação nas contas.
 
 Pesquisa automática de novas vagas, sincronização com GitHub, eventos na Agenda, leitura do WhatsApp recebido e despertadores do Relógio **não estão implementados**. Os avisos atuais acompanham retornos por Gmail; o fato de um recrutador falar só por WhatsApp não alimenta este monitor. A lista pública de vagas não é atualização automática dos processos pessoais.
 

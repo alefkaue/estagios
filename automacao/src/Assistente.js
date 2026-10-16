@@ -37,9 +37,12 @@ function desativarAutomatico() {
 
 function lerVagas_(aba) {
   const dados = aba.getDataRange().getValues();
-  if (!dados.length || dados[0][0] !== 'Inscrito?' || dados[0][10] !== 'ID') throw new Error('Cabeçalhos inesperados. Nenhuma alteração realizada.');
+  if (!dados.length) throw new Error('Cabeçalhos inesperados. Nenhuma alteração realizada.');
+  const cab=dados[0], campos=['Inscrito?','ID','Link','Empresa / vaga'];
+  if (campos.some(c=>cab.indexOf(c)<0 || cab.indexOf(c)!==cab.lastIndexOf(c))) throw new Error('Cabeçalhos ausentes ou duplicados. Nenhuma alteração realizada.');
+  const idCol=cab.indexOf('ID'), linkCol=cab.indexOf('Link'), empresaCol=cab.indexOf('Empresa / vaga');
   const ids = new Set();
-  return dados.slice(1).map((r,i) => ({id:r[10], url:r[3], empresa:r[2], linha:i+2})).filter(v => {
+  return dados.slice(1).map((r,i) => ({id:r[idCol], url:r[linkCol], empresa:r[empresaCol], linha:i+2})).filter(v => {
     if (!v.id) return false;
     if (ids.has(v.id)) throw new Error('ID duplicado; corrigir antes de executar.');
     ids.add(v.id);return true;
