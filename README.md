@@ -1,7 +1,5 @@
 # Estágios — controle simples
 
-**Área do portfólio:** [Desenvolvimento de Software](https://github.com/alefkaue#desenvolvimento-de-software) · **Contexto:** Ferramenta pessoal e modelo público
-
 Automação instalável de acompanhamento e avisos opcionais: [instruções](automacao/README.md) e [relatório do que foi feito](automacao/FEITO_E_PROXIMOS_PASSOS.md). Cada pessoa usa sua conta e sua planilha privadas. Nenhuma automação é ativada apenas por baixar este repositório.
 
 Uma aba, uma linha por oportunidade. Sem painel, pontuação ou abas de preenchimento duplicadas.
